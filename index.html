@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Новогодний сюрприз ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="snow"></div>
+
+<h1>🎄 Найди 5 сердечек 🎄</h1>
+<p class="subtitle">Каждое сердечко хранит сюрприз</p>
+
+<div class="game-area">
+  <div class="heart" data-id="1">❤️</div>
+  <div class="heart" data-id="2">❤️</div>
+  <div class="heart" data-id="3">❤️</div>
+  <div class="heart" data-id="4">❤️</div>
+  <div class="heart" data-id="5">❤️</div>
+</div>
+
+<!-- Марка -->
+<div class="overlay hidden" id="stamp">
+  <div class="card">
+    <img id="stamp-img">
+    <p id="stamp-text"></p>
+    <button onclick="closeStamp()">Закрыть</button>
+  </div>
+</div>
+
+<!-- Закрытое письмо -->
+<div class="overlay hidden" id="letter-closed">
+  <div class="card">
+    <h2>💌 Письмо</h2>
+    <button onclick="openLetter()">Открыть</button>
+  </div>
+</div>
+
+<!-- Открытое письмо -->
+<div class="overlay hidden" id="letter-open">
+  <div class="letter">
+    <h2>С Новым годом ❤️</h2>
+    <p>
+      Моя любимая,<br><br>
+      Пусть этот год принесёт тебе счастье,
+      тепло и улыбки.<br><br>
+      Я тебя очень люблю ✨
+    </p>
+    <button onclick="closeLetter()">Закрыть</button>
+  </div>
+</div>
+
+<button id="musicBtn">🎵 Включить музыку</button>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+<!-- Снег -->
+<div class="snow"></div>
+<script src="script.js"></script>
+</body>
+</html>
