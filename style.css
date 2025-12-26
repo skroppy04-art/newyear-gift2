@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial Black, sans-serif;
-  background: url("photo1.jpg") center/cover no-repeat;
+  background: url("back.jpg") center/cover no-repeat;
   color: white;
   text-align: center;
 }
@@ -124,3 +124,4 @@ button {
   background: rgba(255,255,255,0.8);
   z-index: 2000;
 }
+
